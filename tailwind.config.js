@@ -1,5 +1,5 @@
-const defaultTheme = require("tailwindcss/defaultTheme");
-const plugin = require("tailwindcss/plugin");
+const defaultTheme = require("tailwindcss/defaultTheme")
+const plugin = require("tailwindcss/plugin")
 
 module.exports = {
   theme: {
@@ -36,9 +36,9 @@ module.exports = {
         letter: "72rem",
       },
       height: {
-        letter: "86.9375rem",
+        letter: "1122.24px",
         "letter-col": "71.625rem",
-        "letter-col-full": "77.9375rem",
+        "letter-col-full": "920px",
       },
       spacing: {
         0.5: "2px", // 2px
@@ -82,7 +82,7 @@ module.exports = {
         body: {
           "-webkit-font-smoothing": "subpixel-antialiased",
         },
-      });
+      })
       require("tailwind-heropatterns")({
         // as per tailwind docs you can pass variants
         variants: [],
@@ -103,7 +103,7 @@ module.exports = {
           default: "1.0",
           100: "1.0",
         },
-      });
+      })
       /**
        * Typography Utilities
        */
@@ -170,11 +170,11 @@ module.exports = {
         ".hyphens-manual": {
           hyphens: "manual",
         },
-      };
+      }
 
       addUtilities(typographyUtils, {
         variants: ["responsive"],
-      });
+      })
 
       /**
        * Project Specific Utilities
@@ -183,11 +183,11 @@ module.exports = {
         ".border-inset": {
           "box-shadow": `inset 0 0 0 1px ${theme("colors.gray.400")}`,
         },
-      };
+      }
 
       addUtilities(projectSpecificUtils, {
         variants: ["responsive"],
-      });
+      })
 
       /**
        * CSS Multi-Column Layout Utilities
@@ -223,11 +223,11 @@ module.exports = {
         ".col-fill-balance": {
           "column-fill": "balance",
         },
-      };
+      }
 
       addUtilities(columnUtils, {
         variants: ["responsive"],
-      });
+      })
     }),
   ],
-};
+}
