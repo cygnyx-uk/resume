@@ -14,6 +14,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
+        lato: ["Lato", ...defaultTheme.fontFamily.sans],
         jost: ["Jost", ...defaultTheme.fontFamily.sans],
       },
       fontSize: {
